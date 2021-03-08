@@ -41,7 +41,7 @@ if (isset($messages)) {
 <?php } ?>
     <br />
     <b>Kalkulator kredytowy</b>
-    <form>
+    <form action="<?php print(_APP_URL);?>/app/loanCalc.php" method="get">
             <input type="text" name="kwota" placeholder="kwota" >
             <input type="text" name="okres" placeholder="okres" >
             <input type="text" name="oprocentowanie" placeholder="oprocentowanie" >
@@ -50,6 +50,7 @@ if (isset($messages)) {
             
         </form>
         <p>Wynik:</p>
-
+        
+ 
 </body>
 </html>
