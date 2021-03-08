@@ -20,17 +20,7 @@
 	<input id="id_y" type="text" name="y" value="<?php if (isset($y)) print($y); ?>" /><br />
 	<input type="submit" value="Oblicz" />
 </form>
-    <br />
-    <b>Kalkulator kredytowy</b>
-    <form>
-            <input type="text" name="kwota" placeholder="kwota" >
-            <input type="text" name="okres" placeholder="okres" >
-            <input type="text" name="oprocentowanie" placeholder="oprocentowanie" >
-            <br>
-            <button type="submit" name="submit" value="submit">Policz</button>
-            
-        </form>
-        <p>Wynik:</p>
+    
 <?php
 //wyświeltenie listy błędów, jeśli istnieją
 if (isset($messages)) {
@@ -49,6 +39,17 @@ if (isset($messages)) {
 <?php echo 'Wynik: '.$result; ?>
 </div>
 <?php } ?>
+    <br />
+    <b>Kalkulator kredytowy</b>
+    <form>
+            <input type="text" name="kwota" placeholder="kwota" >
+            <input type="text" name="okres" placeholder="okres" >
+            <input type="text" name="oprocentowanie" placeholder="oprocentowanie" >
+            <br>
+            <button type="submit" name="submit" value="submit">Policz</button>
+            
+        </form>
+        <p>Wynik:</p>
 
 </body>
 </html>
