@@ -49,8 +49,11 @@ if (isset($messages)) {
             <button type="submit" name="submit" value="submit">Policz</button>
             
         </form>
-        <p>Wynik:</p>
-        
+        <?php if (isset($funds_per_month)){ ?>
+<div style="margin: 20px; padding: 10px; border-radius: 5px; background-color: #ff0; width:300px;">
+<?php echo 'Wynik: '.$funds_per_month; ?>
+</div>
+<?php } ?>
  
 </body>
 </html>
